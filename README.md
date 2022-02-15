@@ -15,20 +15,24 @@ A simple API for managing "Do Not Disturb" mode.
 
 ## Why this exists
 
-There are already plenty of packages for managing "Do Not Disturb" mode, however I was not able to get them to work on latest MacOS version (Big Sur) hence I've created this package :P.
+There are already plenty of packages for managing "Do Not Disturb" mode, however I was not able to get them to work on
+latest MacOS version (Big Sur) hence I've created this package :P.
+
+For MacOS Montrey it uses a combo of `macos-focus-mode` for toggling DnD mode, and `macos-notification-state` for checking if DnD mode is enabled or not.
 
 It also supports older MacOS versions via `@sindresorhus/do-not-disturb` package used as fallback.
-
 
 ## Usage
 
 ```js
-const {
+import {
   enable,
   disable,
   toggle,
   isEnabled,
-} = require('@theunderscorer/do-not-disturb');
+  installRequired,
+  install
+} from '@theunderscorer/do-not-disturb';
 
 // Enables "Do Not Disturb" mode
 await enable();
@@ -41,6 +45,12 @@ await toggle();
 
 // Returns "true" if "Do Not Disturb" mode is enabled
 await isEnabled();
+
+// Returns "true" if driver needs to be installed (which is a case for MacOS Montrey)
+await installRequired();
+
+// Installs DnD driver if it is required. If not, does nothing.
+await install();
 ```
 
 ## Development
@@ -52,6 +62,7 @@ The package is written in typescript. In order to build it run:
 ```
 
 To run tests (will run only on MacOS) run:
+
 ```sh
   $ npm run test
 ```

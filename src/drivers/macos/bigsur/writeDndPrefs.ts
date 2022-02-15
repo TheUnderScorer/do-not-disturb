@@ -2,7 +2,7 @@ import toBplistBuffer from 'bplist-creator';
 import fs from 'fs';
 import { getNcPrefs } from './getNcPrefs';
 import { getDndPrefs } from './getDndPrefs';
-import { execFile } from '../../util/execFile';
+import { execFile } from '../../../util/execFile';
 import { getNcPrefsPath } from './getNcPrefsPath';
 import { DndPrefs } from './types';
 

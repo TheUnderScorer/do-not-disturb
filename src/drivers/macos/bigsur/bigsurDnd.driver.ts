@@ -1,9 +1,9 @@
-import { DndDriver } from '../../types';
+import { DndDriver } from '../../../types';
 import { enable } from './enable';
 import { disable } from './disable';
 import { isEnabled } from './isEnabled';
 
-export const macosDndDriver: DndDriver = {
+export const bigsurDndDriver: DndDriver = {
   enable,
   disable,
   isEnabled,

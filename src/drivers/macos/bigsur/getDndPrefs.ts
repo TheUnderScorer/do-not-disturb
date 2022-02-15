@@ -1,5 +1,5 @@
 import { parseBuffer } from 'bplist-parser';
-import { first } from '../../util/first';
+import { first } from '../../../util/first';
 import { getNcPrefs } from './getNcPrefs';
 import { DndPrefs, NcPrefsContents } from './types';
 

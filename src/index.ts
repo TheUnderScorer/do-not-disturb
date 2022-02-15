@@ -15,3 +15,17 @@ export const toggle = async () => {
 
   return enabled ? await driver.disable() : driver.enable();
 };
+
+export const install = async () => {
+  const driver = getDriver();
+
+  if (driver.installable) {
+    await driver.install();
+  }
+};
+
+export const installRequired = () => {
+  const driver = getDriver();
+
+  return driver.installable ? driver.installRequired() : false;
+};

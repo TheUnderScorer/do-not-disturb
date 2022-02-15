@@ -1,6 +1,6 @@
 import { writeDndPrefs } from './writeDndPrefs';
 import { isEnabled } from './isEnabled';
-import { execFile } from '../../util/execFile';
+import { execFile } from '../../../util/execFile';
 
 let didControlCenterReset = false;
 

@@ -1,7 +1,10 @@
 declare module '@sindresorhus/do-not-disturb' {
-  export function enable(): Promise<void>;
+  const doNotDisturb: {
+    enable: () => Promise<void>;
+    disable: () => Promise<void>;
+    isEnabled: () => Promise<boolean>;
+    tiggke: () => Promise<void>;
+  };
 
-  export function disable(): Promise<void>;
-
-  export function isEnabled(): Promise<boolean>;
+  export default doNotDisturb;
 }

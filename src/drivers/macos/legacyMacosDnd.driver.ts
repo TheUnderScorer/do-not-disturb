@@ -1,5 +1,7 @@
 import { DndDriver } from '../../types';
-import { disable, enable, isEnabled } from '@sindresorhus/do-not-disturb';
+import dnd from '@sindresorhus/do-not-disturb';
+
+const { disable, enable, isEnabled } = dnd;
 
 export const legacyMacosDndDriver: DndDriver = {
   enable: async () => {

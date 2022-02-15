@@ -1,8 +1,8 @@
-import { enable } from './enable';
+import { enable } from './bigsur/enable';
 import assert from 'assert';
-import { disable } from './disable';
+import { disable } from './bigsur/disable';
 import * as os from 'os';
-import { isBigSurOrNewer } from './isBigSurOrNewer';
+import { isBigSurOrNewer } from '../../osVersion';
 
 describe('DnD - macos bigsur', function () {
   before(function () {

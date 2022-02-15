@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "CommonJS",
+    "module": "ES2020",
+    "moduleResolution": "Node",
     "strict": true,
     "declaration": true,
     "sourceMap": true,
@@ -9,8 +10,18 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "build",
-    "types": ["mocha", "node"]
+    "types": [
+      "mocha",
+      "node"
+    ]
   },
-  "include": ["src", "test"],
-  "exclude": ["node_modules", "build"]
+  "include": [
+    "src",
+    "tsup.config.ts",
+    "test"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }

@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/TheUnderScorer/do-not-disturb/compare/v1.3.0...v2.0.0) (2022-02-15)
+
+
+### Features
+
+* support macos montrey ([6a1d496](https://github.com/TheUnderScorer/do-not-disturb/commit/6a1d4969220a45c4a9bf945ff7a2553917cede64))
+
+
+### BREAKING CHANGES
+
+* This package is now pure ESM, it cannot be "require()"'d from CommonJS.
+
 # [1.3.0](https://github.com/TheUnderScorer/do-not-disturb/compare/v1.2.0...v1.3.0) (2021-06-08)
 
 

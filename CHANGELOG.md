@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/TheUnderScorer/do-not-disturb/compare/v2.0.0...v2.1.0) (2023-07-16)
+
+
+### Features
+
+* restore common js support ([7677d08](https://github.com/TheUnderScorer/do-not-disturb/commit/7677d08ce9df45cab87bda7476c0f34d2616f95b))
+
 # [2.0.0](https://github.com/TheUnderScorer/do-not-disturb/compare/v1.3.0...v2.0.0) (2022-02-15)
 
 

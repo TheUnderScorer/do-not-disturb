@@ -13,6 +13,13 @@
     "access": "public"
   },
   "main": "build/index.js",
+  "exports": {
+    ".": {
+      "import": "./build/index.js",
+      "require": "./build/index.cjs",
+      "types": "./build/index.d.ts"
+    }
+  },
   "engines": {
     "node": ">=13.x"
   },
@@ -53,8 +60,8 @@
     "node-gyp": "8.4.1",
     "prettier": "^2.3.1",
     "ts-mocha": "9.0.2",
-    "tsup": "5.11.13",
-    "typescript": "4.5.5"
+    "tsup": "7.1.0",
+    "typescript": "5.1.6"
   },
   "release": {
     "plugins": [

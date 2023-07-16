@@ -2,8 +2,8 @@ import { Options } from 'tsup';
 
 const config: Options = {
   splitting: true,
-  format: ['esm'],
-  entryPoints: ['src/index.ts'],
+  format: ['esm', 'cjs'],
+  entry: ['src/index.ts'],
   sourcemap: true,
   clean: true,
   dts: true,

@@ -7,7 +7,6 @@
     "url": "https://github.com/TheUnderScorer/do-not-disturb.git",
     "type": "git"
   },
-  "type": "module",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -15,8 +14,8 @@
   "main": "build/index.js",
   "exports": {
     ".": {
-      "import": "./build/index.js",
-      "require": "./build/index.cjs",
+      "import": "./build/index.mjs",
+      "require": "./build/index.js",
       "types": "./build/index.d.ts"
     }
   },

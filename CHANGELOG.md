@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/TheUnderScorer/do-not-disturb/compare/v2.1.0...v2.2.0) (2023-07-16)
+
+
+### Features
+
+* change default package type to commonjs ([d54f1d5](https://github.com/TheUnderScorer/do-not-disturb/commit/d54f1d5b40b53138028af988bd6b7d2b8dbba168))
+
 # [2.1.0](https://github.com/TheUnderScorer/do-not-disturb/compare/v2.0.0...v2.1.0) (2023-07-16)
 
 
